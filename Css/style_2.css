@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+Body
+{
+	margin: 0px;
+}
+header
+{
+	display: flex;
+	align-items: center;
+	padding-bottom: 15px;
+	
+}
+.link_accueil
+{
+	width: 32%;
+	color: black;
+}
+.icon_arrow
+{
+	
+	margin-left: 20px;
+	font-size: 25px;
+}
+.logo_title
+{
+	margin-top: 10px;
+	width: 35%
+}
+.picture
+{
+	width: 100%;
+	background-image: 100%;
+}
+.title
+{
+	width: 82%;
+	font-family: shrikhand;
+	font-weight: unset;
+	padding-left: 40px;
+}
+.list_menu
+{
+	border: 0px solid transparent;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	background-color: #f6f6f6;
+	width: 100%;
+	position: relative;
+	bottom: 153px;
+	padding-bottom: 85px;
+}
+.container_title
+{
+	display: flex;
+	align-items: center;
+}
+.icon_heart
+{
+	font-family: 'font awesome 6 free';
+	font-size: 30px;
+}
+.title_menu
+{
+	font-family: roboto;
+	font-weight: unset;
+	font-size: 19px;
+	color: #4b4b4b;
+	border-bottom: 2px solid #99e2d0;
+	width: 45px;
+	margin-left: 40px;
+}
+.column_center
+{
+	display: flex;
+	justify-content: center;
+}
+.border_menu
+{
+	border: 2px solid transparent;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: white;
+	width: 95%;
+	margin-bottom: 15px;
+	box-shadow: 4px 5px 10px grey;
+}
+.sub_menu
+{
+	font-family: roboto;
+	font-size: 18px;
+	margin-bottom: 8px;
+	padding-left: 10px;
+}
+.accompaniement_menu
+{
+	color: #4b4b4b;
+	font-size: 16px;
+	margin-top: 0px;
+	padding-left: 10px;
+	font-family: Roboto;
+}
+.line_price_menu
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 97%;
+}
+.price_menu
+{
+	font-weight: bold;
+	color: black;
+	margin-top: 0px;
+	font-size: 16px;
+	font-family: Roboto;
+}
+.mini_logo
+{
+	width: 7%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 18px;
+	font-family: Shrikhand;
+	font-weight: normal;
+	color: white;
+}
+
+.button_order
+{
+	position: absolute;
+	left: 40%;
+	border: 0px solid #c065db;
+	width: 21%;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	height: 52px;
+	background-color: #9356DC;
+	background-image: linear-gradient(#FF79DA, #9356DC);
+	box-shadow: 3px 5px 7px grey;
+	margin-top: 35px;
+}
+.button_order:hover
+{
+	filter: brightness(1.10);
+	box-shadow: 3px 5px 15px grey
+}
+.word_order
+{
+	color: white;
+	font-family: roboto;
+	font-size: 17px;
+}
+footer
+{
+	background-color: #353535;
+	width: 100%;
+}
+.footer_list
+{
+	list-style-type: none;
+	margin-bottom: 0px;
+}
+.rubrics
+{
+	font-family: Roboto;
+	padding-bottom: 7px;
+	color: white;
+}
+.icon_footer
+{
+	width: 25px;
+}
+.rubric_link
+{
+	text-decoration: none;
+	color: white;
+}
+@media (max-width: 767px) 
+{
+	.list_menu
+	{
+		bottom: 59px;
+	}
+	.title
+	{
+		width: 82%;
+		padding-left: 20px;
+	}
+	.title_menu
+	{
+		margin-left: 20px;
+	}
+	.button_order
+	{
+		left: 25%;
+		width: 50%;
+	}
+}
+@media (min-width: 768px) 
+{
+	.list_menu
+	{
+		bottom: 59px;
+	}
+	.button_order
+	{
+		width: 50%;
+		left: 25%;
+	}
+}
+@media (min-width: 992px)
+{
+	.list_menu
+	{
+		bottom: 59px;
+	}
+	
+
