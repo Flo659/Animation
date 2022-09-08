@@ -71,11 +71,13 @@ header
 	background-color: #9356DC;
 	background-image: linear-gradient(#FF79DA, #9356DC);
 	box-shadow: 3px 5px 7px grey;
+	transition: filter 0.7s;
 }
 .button_explorer:hover
 {
 	filter: brightness(1.10);
-	box-shadow: 3px 5px 15px grey
+	box-shadow: 3px 5px 15px grey;
+	cursor: pointer;
 }
 .word_button
 {
@@ -118,10 +120,12 @@ header
 	height: 65px;
 	background-color: #f6f6f6;
 	box-shadow: 4px 6px 7px #e9e9e9;
+	transition: filter 0.7s;
 }
 .list_stages:hover
 {
 	filter: brightness(0.97);
+	cursor: pointer;
 }
 .list_stages:hover .icon_stages
 {
@@ -132,7 +136,8 @@ header
 	border: 2px solid #9356DC;
 	border-radius: 16px;
 	width: 23px;
-	padding-top: 3px;
+	height: 22px;
+	padding-top: 2px;
 	text-align: center;
 	background-color: #9356DC;
 	color: white;
@@ -155,11 +160,12 @@ header
 .border_picture
 {
 	border: 2px solid transparent;
-	border-top-right-radius: 19px;
-	border-top-left-radius: 19px;
+	border-top-right-radius: 16px;
+	border-top-left-radius: 16px;
 	border-bottom-left-radius: 19px;
 	border-bottom-right-radius: 19px;
 	width: 100%;
+	background-color: white;
 }
 .pictures
 {
@@ -231,6 +237,14 @@ header
 	font-family: 'font awesome 6 free';
 	font-size: 25px;
 	padding-right: 20px;
+	color: black;
+}
+.icon_heart:hover
+{
+	background: linear-gradient(#ff79da, #9356dc);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 600;
 }
 .container_flex
 {
@@ -360,6 +374,12 @@ footer
 	.operation_list
 	{
 		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	.list_stages
+	{
+		width: 29%;
+		text-align: unset;
 	}
 	.number
 	{
