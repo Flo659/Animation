@@ -6,7 +6,7 @@ body
 	margin: 0px;
 	
 }
-.container_loading
+.container_turn
 {
 	position: fixed;
 	height: 100%;
@@ -20,65 +20,15 @@ body
 	opacity: 0%;
 	visibility: hidden;
 }
-
-@keyframes visibility{
-	
-	0%
-	{
-		
-		opacity: 100%;
-	}
-	
-	50%
-	{
-		opacity: 70%;
-		visibility: visible;
-	
-	}
-	100%
-	{
-		opacity: 0%;
-	}
-}
-.loading
+.spinner
 {
-	font-family: Shrikhand;
-	font-weight: normal;
-	color: #9356DC;
-	font-size: 80px;
-	background-image: linear-gradient(#FF79DA, #9356DC);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-align: center;
-	animation-name: loading;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-iteration-count: 1;
+	border: 8px solid #f3f3f3;
+	border-radius: 59px;
+	border-top: 8px solid #ff79da;
+	width: 86px;
+	height: 86px;
+	animation: spinner 3s ease-in-out;
 }
-
-@keyframes loading{
-	
-	0%
-	{
-		background-image: linear-gradient(#FF79DA, #9356DC);
-		
-
-	}
-	50%
-	{
-		background-image: linear-gradient(#9356DC,#FF79DA);
-		transform: scale(1.5);
-		
-	}
-	100%
-	{
-		background-image: linear-gradient(#9356DC,#FF79DA );	
-		
-	}
-
-}
-
-
 header
 {
 	text-align: center;
@@ -220,11 +170,6 @@ header
 	left: 28px;
 	
 }
-.word_stage
-{
-	font-family: roboto;
-	font-size: 17px;
-}
 .icon_stages
 {
 	color: gray;
@@ -232,51 +177,10 @@ header
 	width: 5%;
 	padding-left: 30px;
 }
-.border_picture
+.word_stage
 {
-	border: 2px solid transparent;
-	border-top-right-radius: 16px;
-	border-top-left-radius: 16px;
-	border-bottom-left-radius: 19px;
-	border-bottom-right-radius: 19px;
-	width: 100%;
-	background-color: white;
-}
-.pictures
-{
-	width: 100%;
-	height: 300px;
-	object-fit: cover;
-	border-top-right-radius: 16px;
-	border-top-left-radius: 16px;
-}
-.word_new
-{
-	border: 2px solid #99e2d0;
-	width: 8%;
-	height: 25px;
-	font-family: Roboto;
-	font-size: 16px;
-	font-weight: bold;
-	padding-top: 5px;
-	text-align: center;
-	position: absolute;
-	left: 86%;
-	color: green;
-	background-color: #99e2d0;
-	animation-name: word_visibility;
-	animation-duration: 3s;
-}
-@keyframes word_visibility
-{
-	from
-	{
-		opacity: 0%
-	}
-	to
-	{
-		opacity: 100%;
-	}
+	font-family: roboto;
+	font-size: 17px;
 }
 .section_down
 {
@@ -304,6 +208,49 @@ header
 	color: black;
 	width: 95%;
 }
+.border_picture
+{
+	border: 2px solid transparent;
+	border-top-right-radius: 16px;
+	border-top-left-radius: 16px;
+	border-bottom-left-radius: 19px;
+	border-bottom-right-radius: 19px;
+	width: 100%;
+	background-color: white;
+}
+.word_new
+{
+	border: 2px solid #99e2d0;
+	width: 8%;
+	height: 25px;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 5px;
+	text-align: center;
+	position: absolute;
+	left: 86%;
+	color: green;
+	background-color: #99e2d0;
+	animation-name: word_visibility;
+	animation-duration: 3s;
+	
+}
+.pictures
+{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	border-top-right-radius: 16px;
+	border-top-left-radius: 16px;
+}
+.container_flex
+{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+	padding-left: 15px;
+}
 .name_restaurant
 {
 	font-family: roboto;
@@ -311,14 +258,6 @@ header
 	margin-top: 0px;
 	margin-bottom: 0px;
 	font-size: 19px;
-}
-.city_restaurant
-{
-	font-family: Roboto;
-	margin-top: 0px;
-	padding-top: 5px;
-	font-size: 19px;
-	padding-left: 15px;
 }
 .icon_heart
 {
@@ -332,25 +271,17 @@ header
 }
 .icon_heart:hover
 {
-	background-color: red;
+	background-color: #FF79DA;
 	font-weight: 600;
 }
-.container_flex
+
+.city_restaurant
 {
-	display: flex;
-	justify-content: space-between;
-	padding-top: 10px;
+	font-family: Roboto;
+	margin-top: 0px;
+	padding-top: 5px;
+	font-size: 19px;
 	padding-left: 15px;
-}
-.mini_logo
-{
-	width: 7%;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	font-size: 18px;
-	font-family: Shrikhand;
-	font-weight: normal;
-	color: white;
 }
 footer
 {
@@ -362,6 +293,16 @@ footer
 	list-style-type: none;
 	margin-bottom: 0px;
 	margin-top: 0px;
+}
+.mini_logo
+{
+	width: 7%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 18px;
+	font-family: Shrikhand;
+	font-weight: normal;
+	color: white;
 }
 .rubrics
 {
@@ -379,30 +320,69 @@ footer
 	color: white;
 }
 
+@keyframes visibility{
+	
+	0%
+	{
+		
+		opacity: 100%;
+	}
+	
+	50%
+	{
+		opacity: 100%;
+		visibility: visible;
+	
+	}
+	100%
+	{
+		opacity: 0%;
+	}
+}
+
+@keyframes spinner{
+	0%
+	{
+		transform: rotate(0deg);
+		border-top: 8px solid #ff79da;
+	}
+	25%
+	{
+		border-top: 8px solid #ff79da;
+	}
+	50%
+	{
+		border-top: 8px solid #9356dc;
+	}
+	100%
+	{
+		transform: rotate(360deg);
+		border-top: 8px solid #ff79da;
+	}
+}
+
+@keyframes word_visibility
+{
+	from
+	{
+		opacity: 0%
+	}
+	50%
+	{
+		opacity: 0%;
+	}
+	100%
+	{
+		opacity: 100%;
+	}
+}
+
 @media (max-width: 767px)
 {
 	
 	.button_explorer
 	{
 		width: 55%;
-	}
-	.icon_stages
-	{
-		width: 45px;
-	}
-	.word_new
-	{
-		width: 20%;
-		left: 71%;
-		font-size: 15px;
-	}
-	.pictures
-	{
-		height: 200px;
-	}
-	.menu_link
-	{
-		width: 90%;
 	}
 	.operation_list
 	{
@@ -416,31 +396,39 @@ footer
 	.number
 	{
 		left: 11px;
+		animation-name: word_visibility;
+		animation-duration: 3s;
+	}
+	.icon_stages
+	{
+		width: 45px;
+	}
+	.menu_link
+	{
+		width: 90%;
+	}
+	.word_new
+	{
+		width: 20%;
+		left: 71%;
+		font-size: 15px;
+	}
+	
+	.pictures
+	{
+		height: 200px;
 	}
 	.icon_heart:active
 	{
-	background-color: red;
+	background-color: #FF79DA;
 	font-weight: 600;
 	}
 }
 @media (min-width: 768px) 
 {
-	.pictures
-	{
-		width: 100%;
-	}
-	.mini_logo
-	{
-		width: 10%;
-	}
 	.button_explorer
 	{
 		width: 55%;
-	}
-	.word_new
-	{
-		width :20%;
-		left: 75%;
 	}
 	.operation_list
 	{
@@ -454,17 +442,26 @@ footer
 	.number
 	{
 		left: unset;
+		animation-name: word_visibility;
+		animation-duration: 3s;
 	}
-
-
+	.word_new
+	{
+		width :20%;
+		left: 75%;
+	}
+	.pictures
+	{
+		width: 100%;
+	}
+	.mini_logo
+	{
+		width: 10%;
+	}
+	
 }
 @media (min-width: 992px)
 {
-	.icon_stages
-	{
-		width: 12%;
-
-	}
 	.operation_list
 	{
 		flex-direction: row;
@@ -479,14 +476,14 @@ footer
 	{
 		position: unset;
 	}
-	.border_picture
+	.icon_stages
 	{
-		width: 100%;
+		width: 12%;
+
 	}
-	.pictures
+	.section_down
 	{
 		width: 100%;
-		height: 230px;
 	}
 	.container_restaurant
 	{
@@ -497,7 +494,7 @@ footer
 	{
 		width: 24%;
 	}
-	.section_down
+	.border_picture
 	{
 		width: 100%;
 	}
@@ -507,4 +504,10 @@ footer
 		margin-left: 14%;
 		width: 8%;
 	}
+	.pictures
+	{
+		width: 100%;
+		height: 230px;
+	}
+	
 }
