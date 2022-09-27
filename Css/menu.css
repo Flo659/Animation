@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+Body
+{
+	margin: 0px;
+	background-color: #f6f6f6;
+}
+header
+{
+	display: flex;
+	align-items: center;
+	padding-bottom: 15px;
+	background-color: white;
+	
+}
+.link_accueil
+{
+	width: 32%;
+	color: black;
+}
+.icon_arrow
+{
+	
+	margin-left: 20px;
+	font-size: 25px;
+}
+.logo_title
+{
+	margin-top: 10px;
+	width: 35%
+}
+.picture
+{
+	width: 100%;
+	height: 800px;
+	object-fit: cover;
+
+}
+.list_menu
+{
+	border: 0px solid transparent;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	background-color: #f6f6f6;
+	width: 100%;
+	position: relative;
+	bottom: 153px;
+	padding-bottom: 85px;
+}
+
+.container_title
+{
+	display: flex;
+	align-items: center;
+}
+.title
+{
+	width: 82%;
+	font-family: shrikhand;
+	font-weight: unset;
+	padding-left: 40px;
+}
+
+.icon_heart
+{
+	font-family: 'font awesome 6 free';
+	font-size: 30px;
+	background-color: black;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: all 300ms linear;
+	cursor: pointer;
+}
+.icon_heart:hover
+{
+	background-color: #FF79DA;
+	font-weight: 600;
+}
+.animation_appearance_delay
+{
+	animation-name: slip;
+	animation-fill-mode: backwards;
+	animation-duration: 0.97s;
+	animation-timing-function: linear;
+}
+.appearance_delay_1
+{
+	animation-delay: 0.5s;
+}
+.appearance_delay_2
+{
+	animation-delay: 0.9s;
+}
+.appearance_delay_3
+{
+	animation-delay: 1.3s;
+}
+.title_menu
+{
+	font-family: roboto;
+	font-weight: unset;
+	font-size: 19px;
+	color: #4b4b4b;
+	border-bottom: 2px solid #99e2d0;
+	width: 45px;
+	margin-left: 40px;
+}
+.column_center
+{
+	display: flex;
+	justify-content: center;
+}
+.border_menu
+{
+	border: 0px solid transparent;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: white;
+	width: 95%;
+	cursor: pointer;
+	margin-bottom: 15px;
+	box-shadow: 4px 5px 10px grey;
+}
+.conteneur_menu
+{
+	display: flex;
+	justify-content: space-between;
+}
+.line_price_menu
+{
+	width: 95%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.sub_menu
+{
+	font-family: roboto;
+	font-size: 18px;
+	margin-bottom: 8px;
+	padding-left: 10px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.accompaniement_menu
+{
+	color: #4b4b4b;
+	font-size: 16px;
+	margin-top: 0px;
+	padding-left: 10px;
+	font-family: Roboto;
+	text-overflow:	ellipsis;
+	overflow: hidden;
+}
+.price_menu
+{
+	font-weight: bold;
+	color: black;
+	margin-top: 0px;
+	font-size: 16px;
+	font-family: Roboto;
+	display: flex;
+	align-items: flex-end;
+	width: 60px;
+	transition:  padding-right 0.7s;
+}
+.border_menu:hover .price_menu
+{
+	padding-right: 25px;
+	
+}
+.logo_hover
+{
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid transparent;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	visibility: hidden;
+}
+.border_menu .logo_hover
+{
+	background-color: #8fdec9;
+	opacity: 0%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid transparent;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	width: 0px;
+	animation-duration: 0.7s;
+	transition: all 0.7s;
+}
+.border_menu:hover .logo_hover
+{
+	background-color: #8fdec9;
+	opacity: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid transparent;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	width: 97px;
+	animation-name: hover_logo;
+	animation-duration: 0.7s;
+	visibility: visible;
+}
+.border_menu .fa-sharp
+{
+	background: none;
+	border: 2px solid;
+	border-radius: 25px;
+	width: 29px;
+	padding-top: 3px;
+	padding-right: 2px;
+	padding-left: 2px;
+	padding-bottom: 2px;
+	height: 28px;
+	font-size: 25px;
+	text-align: center;
+	animation-name: rotate_2;
+	animation-duration: 0.7s;
+}
+.border_menu:hover .fa-sharp
+{
+	color: #8fdec9;
+	background: white;
+	border: 2px solid;
+	border-radius: 25px;
+	width: 29px;
+	height: 28px;
+	font-size: 25px;
+	text-align: center;
+	animation-name: rotate;
+	animation-duration: 0.7s;
+}
+.button_order
+{
+	position: absolute;
+	left: 40%;
+	border: 0px solid #c065db;
+	width: 21%;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	height: 52px;
+	background-color: #9356DC;
+	background-image: linear-gradient(#FF79DA, #9356DC);
+	box-shadow: 3px 5px 7px grey;
+	margin-top: 35px;
+	transition: filter 0.7s;
+}
+.button_order:hover
+{
+	filter: brightness(1.10);
+	box-shadow: 3px 5px 15px grey;
+	cursor: pointer;
+}
+.word_order
+{
+	color: white;
+	font-family: roboto;
+	font-size: 17px;
+}
+footer
+{
+	background-color: #353535;
+	width: 100%;
+}
+.footer_list
+{
+	list-style-type: none;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.mini_logo
+{
+	width: 7%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 18px;
+	font-family: Shrikhand;
+	font-weight: normal;
+	color: white;
+}
+.rubrics
+{
+	font-family: Roboto;
+	padding-bottom: 7px;
+	color: white;
+}
+.icon_footer
+{
+	width: 25px;
+}
+.rubric_link
+{
+	text-decoration: none;
+	color: white;
+}
+
+@keyframes slip{
+
+	from
+	{
+		transform: translateY(-15px);
+		opacity: 0%;
+	}
+	to
+	{
+		transform: translateY(0px);
+		opacity: 100%;
+	}
+}
+@keyframes rotate_2{
+	
+	0%
+	{
+		color: #8fdec9;
+		background: white;
+		transform: rotate(0deg);
+		
+		
+	}
+	50%
+	{	color: #8fdec9;
+		background: white;
+		transform: rotate(360deg);
+		
+		
+	}
+	100%
+	{
+		color: transparent;
+		background: none;
+	}
+}
+@keyframes rotate{
+	
+	from
+	{
+		transform: rotate(0deg);
+	
+		
+	}
+	to
+	{
+		transform: rotate(360deg);
+	
+		
+	}
+}
+
+@media (max-width: 767px) 
+{
+	.picture
+	{
+		height: 300px;
+	}
+	.list_menu
+	{
+		bottom: 59px;
+	}
+	
+	.title
+	{
+		width: 82%;
+		padding-left: 20px;
+	}
+	.icon_heart:active
+	{
+		background-color: #FF79DA;
+		font-weight: 600;
+	}
+	.title_menu
+	{
+		margin-left: 20px;
+	}
+	.button_order
+	{
+		left: 25%;
+		width: 50%;
+	}
+}
+
+@media (min-width: 768px) 
+{
+	.list_menu
+	{
+		bottom: 59px;
+	}
+	.button_order
+	{
+		width: 50%;
+		left: 25%;
+	}
+}
+@media (min-width: 992px)
+{
+	.list_menu
+	{
+		bottom: 59px;
+	}
+}
+
