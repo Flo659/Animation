@@ -208,7 +208,6 @@ header
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
 	width: 97px;
-	animation-name: hover_logo;
 	animation-duration: 0.7s;
 	visibility: visible;
 }
